@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f6f6fe;
+  background-image: url(/images/bg-top.svg), url(/images/bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: top right, top left;
+}
+
+main {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr;
+      grid-template-areas: ' . headerr . ' 'leftt midle rightt';
+}
+
+main span {
+  font-size: 50px;
+}
+
+main hr {
+  opacity: 0.4;
+  margin: 0 2vh 0 2vh;
+}
+
+main p {
+  color: #6d708d;
+}
+
+main span {
+  color: #494c5f;
+}
+
+main h3 {
+  color: #6d708d;
+}
+
+main h1 {
+  color: #6d708d;
+}
+
+#header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: headerr;
+}
+
+#header p {
+  color: #b3b5c6;
+}
+
+#left {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: leftt;
+  border-radius: 2vh;
+  background-color: white;
+}
+
+#middle {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: midle;
+  background-image: linear-gradient(350deg, #696fdd, #a3a8f0);
+  border-radius: 2vh;
+}
+
+#middle p {
+  color: #f6f6fe;
+}
+
+#middle span {
+  color: #f6f6fe;
+}
+
+#middle h3 {
+  color: #f6f6fe;
+}
+
+#right {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: rightt;
+  border-radius: 2vh;
+  background-color: white;
+}
+
+button {
+  border: none;
+  border-radius: 1vh;
+  color: #696fdd;
+}
+
+button:active {
+  margin: 2vh 0 0 2vh;
+}
+
+button:hover {
+  background-image: linear-gradient(350deg, #696fdd, #a3a8f0);
+  cursor: pointer;
+}
+
+.learn:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(white), to(white));
+  background-image: linear-gradient(to right, white, white);
+}
+
+.learn {
+  background-image: linear-gradient(350deg, #696fdd, #a3a8f0);
+}
+/*# sourceMappingURL=style.css.map */
