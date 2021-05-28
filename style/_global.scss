@@ -47,6 +47,10 @@ main{
     p{
         color:hsl(234, 14%, 74%);
     }
+    #annual{
+        display:flex;
+        justify-content: center;
+    }
 }
 
 #left{
@@ -75,4 +79,8 @@ main{
     grid-area:rightt;
     border-radius:2vh;
     background-color: white;
+}
+
+.span2{
+    display:none;
 }
