@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@media screen and (max-width: 375px) {
+  main {
+    display: flexbox;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+        grid-template-areas: 'headerr' 'leftt' 'midle' 'rightt';
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,40 +20,49 @@ body {
   background-color: #f6f6fe;
   background-image: url(/images/bg-top.svg), url(/images/bg-bottom.svg);
   background-repeat: no-repeat;
-  background-position: top right, top left;
+  background-position: top right, bottom left;
+  background-size: 20%, 20%;
 }
 
 main {
   font-family: 'Montserrat', sans-serif;
-  font-size: 15px;
+  font-size: 2.4vh;
   text-align: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 1fr 1fr;
-      grid-template-areas: ' . headerr . ' 'leftt midle rightt';
+  grid-auto-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: ' . headerr . ' 'leftt midle rightt' 'leftt midle rightt' 'leftt midle rightt';
+  margin: 0 22vh 2vh 22vh;
 }
 
 main span {
   font-size: 50px;
+  color: #494c5f;
+}
+
+main .dol {
+  font-size: 50%;
+  margin: 0 -2vh 4vh 0;
 }
 
 main hr {
   opacity: 0.4;
-  margin: 0 2vh 0 2vh;
+  margin: 2.5vh 9vh;
 }
 
 main p {
   color: #6d708d;
 }
 
-main span {
-  color: #494c5f;
+main .span1 {
+  display: none;
 }
 
 main h3 {
   color: #6d708d;
+  margin: 3.5vh 0;
 }
 
 main h1 {
@@ -54,6 +73,15 @@ main h1 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: headerr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 #header p {
@@ -71,14 +99,17 @@ main h1 {
 
 #left {
   -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: leftt;
-  border-radius: 2vh;
-  background-color: white;
+  border-radius: 2vh 0 0 2vh;
+  background-color: orange;
+  margin: 5vh 0;
 }
 
 #middle {
   -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 2;
   grid-area: midle;
   background-image: linear-gradient(350deg, #696fdd, #a3a8f0);
@@ -95,42 +126,51 @@ main h1 {
 
 #middle h3 {
   color: #f6f6fe;
+  margin: 6vh 0;
 }
 
 #right {
   -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 3;
   grid-area: rightt;
-  border-radius: 2vh;
-  background-color: white;
-}
-
-.span2 {
-  display: none;
+  border-radius: 0 2vh 2vh 0;
+  background-color: orange;
+  margin: 5vh 0;
 }
 
 button {
   border: none;
   border-radius: 1vh;
   color: #696fdd;
+  width: 40vh;
+  height: 5.5vh;
+  font-size: 1.9vh;
+  letter-spacing: 2px;
+  margin: 3vh 3vh;
 }
 
 button:active {
-  margin: 2vh 0 0 2vh;
+  margin: 4vh 0 0 4vh;
 }
 
 button:hover {
   background-image: linear-gradient(350deg, #696fdd, #a3a8f0);
   cursor: pointer;
+  border: 1px solid white;
+  color: white;
 }
 
 .learn:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(white), to(white));
   background-image: linear-gradient(to right, white, white);
+  border: 1px solid #a3a8f0;
+  color: #696fdd;
 }
 
 .learn {
   background-image: linear-gradient(350deg, #696fdd, #a3a8f0);
+  color: white;
 }
 
 /* The switch - the box around the slider */
@@ -138,8 +178,8 @@ button:hover {
   position: relative;
   bottom: 1vh;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 9.6vh;
+  height: 5.4vh;
   margin: 0 4vh 0 4vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,8 +210,8 @@ button:hover {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 4.16vh;
+  width: 4.16vh;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -200,13 +240,5 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-.hide-num .span1 {
-  display: none;
-}
-
-.hide-num .span2 {
-  display: initial;
 }
 /*# sourceMappingURL=style.css.map */

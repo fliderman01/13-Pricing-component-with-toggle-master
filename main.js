@@ -14,6 +14,6 @@
 //   });
 
 function myFunction() {
-    document.querySelector('.span1').style.display = 'none'; // ტანიას პარაგრაფის გაჩენა
+    document.querySelectorAll('.span1').style.display = 'none'; // ტანიას პარაგრაფის გაჩენა
     document.querySelector('.span2').style.display = 'initial'; // ჯონის პარაგრაფის გაქრობა
   };

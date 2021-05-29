@@ -8,34 +8,44 @@ body{
     background-color: hsl(240, 78%, 98%);
     background-image:url(/images/bg-top.svg), url(/images/bg-bottom.svg);
     background-repeat: no-repeat;
-    background-position: top right, top left;
+    background-position: top right, bottom left;
+    background-size:20%, 20%;
 }
 
 main{
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 2.4vh;
     text-align: center;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
     ' . headerr . '
+    'leftt midle rightt'
+    'leftt midle rightt'
     'leftt midle rightt';
+    margin:0 22vh 2vh 22vh;
     span{
         font-size: 50px;
+        color:hsl(232, 13%, 33%);
+    }
+    .dol{
+        font-size: 50%;
+        margin:0 -2vh 4vh 0;
     }
     hr{
         opacity:0.4;
-        margin:0 2vh 0 2vh;
+        margin:2.5vh 9vh;
     }
     p{
         color:hsl(233, 13%, 49%);
     }
-    span{
-        color:hsl(232, 13%, 33%);
+    .span1{
+        display:none;
     }
     h3{
         color:hsl(233, 13%, 49%);
+        margin:3.5vh 0;
     }
     h1{
         color:hsl(233, 13%, 49%);
@@ -44,19 +54,23 @@ main{
 
 #header{
     grid-area:headerr;
-    p{
-        color:hsl(234, 14%, 74%);
-    }
-    #annual{
-        display:flex;
-        justify-content: center;
-    }
+    display: flex;
+    flex-direction: column;
+    align-self:center;
+        p{
+            color:hsl(234, 14%, 74%);
+        }
+        #annual{
+            display:flex;
+            justify-content: center;
+        }
 }
 
 #left{
     grid-area:leftt;
-    border-radius:2vh;
-    background-color: white;
+    border-radius:2vh 0 0 2vh;
+    background-color: orange;
+    margin:5vh 0;
 }
 
 #middle{
@@ -71,16 +85,14 @@ main{
     }
     h3{
         color:hsl(240, 78%, 98%);
+        margin:6vh 0;
     }
 }
 
 
 #right{
     grid-area:rightt;
-    border-radius:2vh;
-    background-color: white;
-}
-
-.span2{
-    display:none;
+    border-radius:0 2vh 2vh 0;
+    background-color: orange;
+    margin:5vh 0;
 }

@@ -3,8 +3,8 @@
     position: relative;
     bottom:1vh;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 9.6vh;
+    height: 5.4vh;
     margin:0 4vh 0 4vh;
     display:flex;
   }
@@ -32,8 +32,8 @@
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 4.16vh;
+    width: 4.16vh;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -64,11 +64,11 @@
     border-radius: 50%;
   }
 
-  .hide-num{
-      .span1{
-          display:none;
-      }
-      .span2{
-          display:initial;
-      }
-  }
+  // .hide-num{
+  //     .span1{
+  //         display:none;
+  //     }
+  //     .span2{
+  //         display:initial;
+  //     }
+  // }
