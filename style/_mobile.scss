@@ -1,14 +1,8 @@
 @media screen and (max-width:375px) {
 
     main{
-    display:flexbox;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
-    grid-template-areas:
-    'headerr'
-    'leftt'
-    'midle'
-    'rightt';
+    display:inherit;
+    margin:0;
     }
 
 }

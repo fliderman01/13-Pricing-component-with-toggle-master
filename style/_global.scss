@@ -25,11 +25,18 @@ main{
     'leftt midle rightt'
     'leftt midle rightt';
     margin:0 22vh 2vh 22vh;
+    strong{
+        font-size:5vh;
+        color:hsl(232, 13%, 33%);
+    }
     span{
         font-size: 50px;
         color:hsl(232, 13%, 33%);
     }
     .dol{
+        display:flex;
+        align-items:center;
+        justify-content: center;
         font-size: 50%;
         margin:0 -2vh 4vh 0;
     }
@@ -39,9 +46,6 @@ main{
     }
     p{
         color:hsl(233, 13%, 49%);
-    }
-    .span1{
-        display:none;
     }
     h3{
         color:hsl(233, 13%, 49%);
@@ -80,6 +84,9 @@ main{
     p{
         color:hsl(240, 78%, 98%);
     }
+    strong{
+        color:white;
+    }
     span{
         color:hsl(240, 78%, 98%);
     }
@@ -88,7 +95,6 @@ main{
         margin:6vh 0;
     }
 }
-
 
 #right{
     grid-area:rightt;
