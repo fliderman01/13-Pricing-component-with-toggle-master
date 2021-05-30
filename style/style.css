@@ -110,7 +110,7 @@ main h1 {
   -ms-grid-column: 1;
   grid-area: leftt;
   border-radius: 2vh 0 0 2vh;
-  background-color: orange;
+  background-color: white;
   margin: 5vh 0;
 }
 
@@ -146,7 +146,7 @@ main h1 {
   -ms-grid-column: 3;
   grid-area: rightt;
   border-radius: 0 2vh 2vh 0;
-  background-color: orange;
+  background-color: white;
   margin: 5vh 0;
 }
 
