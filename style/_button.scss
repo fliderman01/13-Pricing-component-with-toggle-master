@@ -6,7 +6,7 @@ button{
     height:5.5vh;
     font-size: 1.9vh;
     letter-spacing: 2px;
-    margin: 3vh 3vh;
+    margin: 3vh;
 }
 
 button:active{
@@ -20,13 +20,13 @@ button:hover{
     color:white;
 }
 
+.learn{
+    background-image:linear-gradient(350deg, hsl(237, 63%, 64%), hsl(236, 72%, 79%));
+    color:white;
+}
+
 .learn:hover{
     background-image:linear-gradient(to right, white, white);
     border:1px solid hsl(236, 72%, 79%);
     color:hsl(237, 63%, 64%);
-}
-
-.learn{
-    background-image:linear-gradient(350deg, hsl(237, 63%, 64%), hsl(236, 72%, 79%));
-    color:white;
 }

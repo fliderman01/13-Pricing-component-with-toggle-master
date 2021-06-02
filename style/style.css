@@ -40,7 +40,6 @@ main strong {
 }
 
 main span {
-  font-size: 50px;
   color: #494c5f;
 }
 
@@ -54,7 +53,7 @@ main .dol {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 50%;
+  font-size: 325%;
   margin: 0 -2vh 4vh 0;
 }
 
@@ -74,6 +73,11 @@ main h3 {
 
 main h1 {
   color: #6d708d;
+}
+
+main a {
+  text-decoration: none;
+  color: inherit;
 }
 
 #header {
@@ -158,7 +162,7 @@ button {
   height: 5.5vh;
   font-size: 1.9vh;
   letter-spacing: 2px;
-  margin: 3vh 3vh;
+  margin: 3vh;
 }
 
 button:active {
@@ -172,16 +176,16 @@ button:hover {
   color: white;
 }
 
+.learn {
+  background-image: linear-gradient(350deg, #696fdd, #a3a8f0);
+  color: white;
+}
+
 .learn:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(white), to(white));
   background-image: linear-gradient(to right, white, white);
   border: 1px solid #a3a8f0;
   color: #696fdd;
-}
-
-.learn {
-  background-image: linear-gradient(350deg, #696fdd, #a3a8f0);
-  color: white;
 }
 
 /* The switch - the box around the slider */
