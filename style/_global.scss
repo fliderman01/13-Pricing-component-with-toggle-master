@@ -30,14 +30,13 @@ main{
         color:hsl(232, 13%, 33%);
     }
     span{
-        font-size: 50px;
         color:hsl(232, 13%, 33%);
     }
     .dol{
         display:flex;
         align-items:center;
         justify-content: center;
-        font-size: 50%;
+        font-size: 325%;
         margin:0 -2vh 4vh 0;
     }
     hr{
@@ -54,9 +53,13 @@ main{
     h1{
         color:hsl(233, 13%, 49%);
     }
+    a{
+        text-decoration: none;
+        color:inherit;
+    }
 }
 
-#header{
+#header{ //ზედა ბარათი
     grid-area:headerr;
     display: flex;
     flex-direction: column;
@@ -70,14 +73,14 @@ main{
         }
 }
 
-#left{
+#left{ // მარცხენა ბარათი
     grid-area:leftt;
     border-radius:2vh 0 0 2vh;
     background-color: white;
     margin:5vh 0;
 }
 
-#middle{
+#middle{ // შუა ბარათი
     grid-area:midle;
     background-image:linear-gradient(350deg, hsl(237, 63%, 64%), hsl(236, 72%, 79%));
     border-radius:2vh;
@@ -96,7 +99,7 @@ main{
     }
 }
 
-#right{
+#right{ // მარჯვენა ბარათი
     grid-area:rightt;
     border-radius:0 2vh 2vh 0;
     background-color: white;
